@@ -1,0 +1,116 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Carusell from '../components/Carusell.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+
+			<div class="hero">
+				<h1>Young Life</h1>
+				<h2>Metro Alajuela</h2>
+
+				<Carusell />
+			</div>
+
+			
+
+			<div class="flex-container">
+				<div class="flex-box">
+					<div class="encuentranos">
+						<h2>Encuéntranos</h2>
+						<p>Visítanos en nuestra ubicación.</p>
+					</div>
+				</div>
+				<div class="flex-box">
+					<div class="quiero-donar">
+						<h2>Quiero Donar</h2>
+						<p>Apoya nuestra causa y haz una donación.</p>
+						<a href="/donar" class="boton">Donar</a>
+					</div>
+				</div>
+				<div class="flex-box">
+					<div class="quiero-donar">
+						<h2>Quiero Donar</h2>
+						<p>Apoya nuestra causa y haz una donación.</p>
+						<a href="/donar" class="boton">Donar</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<div class="indexAbout">
+				<h2>Sobre nosotros</h2>
+			</div>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	.hero {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color:rgba(130, 125, 67, 0.036);
+	}
+
+	.hero h1{
+		font-size: 8em;
+		/* color: #839345;*/ 
+		color: var(--verdeYL) ;
+		margin-bottom: -20px;
+	}
+
+	.hero h2{
+		color: #6a7343;
+		font-size: 3.5em;
+	}
+
+	.indexAbout{
+		color: black;
+		text-align: center;
+	}
+
+	/* Estilos para el encabezado (Hero) */
+
+	.flex-container {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente al centro */
+    margin-top: 20px;
+}
+
+.flex-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.encuentranos {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+}
+
+.quiero-donar {
+    background: #0077b5; /* Color de fondo del botón */
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+</style>
