@@ -1,15 +1,17 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="logo"><a href="/"><img src="/LogoYL.png" alt="Logo de la organización"></a></div>
 		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/">Inicio</HeaderLink>
+			<HeaderLink href="/about">Sobre nosotros</HeaderLink>
+			<HeaderLink href="/about">Clubs</HeaderLink>
+			<HeaderLink href="/about">Campamentos</HeaderLink>
+			<HeaderLink href="/about">Contacto</HeaderLink>
+			<HeaderLink href="/about">Donaciones</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -46,8 +48,8 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: rgb(245, 245, 245);;
+		box-shadow: 0 2px 8px rgba(var(--black), 55%);
 	}
 	h2 {
 		margin: 0;
@@ -77,9 +79,19 @@ import { SITE_TITLE } from '../consts';
 	.social-links a {
 		display: flex;
 	}
+
+	.logo{
+  		width: 90px; /* Ajusta el tamaño del logotipo según tus preferencias */
+  		height: auto; /* Mantiene la proporción original de la imagen */
+	}
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;
 		}
+
+		.logo{
+  		width: 50px; /* Ajusta el tamaño del logotipo según tus preferencias */
+  		height: auto; /* Mantiene la proporción original de la imagen */
+	}
 	}
 </style>
