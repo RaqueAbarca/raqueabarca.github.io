@@ -15,11 +15,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<div class="hero">
-				<h1>Young Life</h1>
-				<h2>Metro Alajuela</h2>
-				<Carusell />
-			</div>
+			<img id="YLhero" src="/raqueabarca.github.io/Inicio.png" alt="Imagen 1">
 			<CuadrosPreviewIndex />
 		</main>
 		<Footer />
@@ -27,27 +23,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 </html>
 
 <style>
-	.hero {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		background-color:white;
-		padding: 2em;
-		box-shadow: 0 2px 8px rgba(var(--black), 15%);
-	}
 
-	.hero h1{
-		font-size: 7em;
-		/* color: #839345;*/ 
-		color: var(--verdeYL);
-		margin-bottom: -20px;
-	}
-
-	.hero h2{
-		font-family: r;
-		color: #0b1250;
-		font-size: 3em;
+	#YLhero{
+		border-radius: 0%;
 	}
 </style>
