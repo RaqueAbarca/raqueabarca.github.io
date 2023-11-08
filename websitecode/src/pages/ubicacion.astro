@@ -3,7 +3,6 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Mapa from '../components/Mapa.astro';
-import CuadrosPreviewIndex from '../components/CuadrosPreviewIndex.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
@@ -15,7 +14,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>Ubicaciones</h1>
+			<div class="titulopagina">
+				<h1>Ubicación</h1>
+				<h2>de nuestros clubes</h2>
+			</div>
+
 			<Mapa />
 		</main>
 		<Footer />
@@ -23,8 +26,12 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 </html>
 
 <style>
+	.titulopagina{
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
 
-	#YLhero{
-		border-radius: 0%;
+	.titulopagina h1{
+		margin-bottom: -20px;
 	}
 </style>
