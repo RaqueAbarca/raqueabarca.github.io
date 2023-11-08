@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Carusell from '../components/Carusell.astro';
+import Mapa from '../components/Mapa.astro';
 import CuadrosPreviewIndex from '../components/CuadrosPreviewIndex.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -15,7 +15,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>Sobre Nosotros</h1>
+			<h1>Ubicaciones</h1>
+			<Mapa />
 		</main>
 		<Footer />
 	</body>

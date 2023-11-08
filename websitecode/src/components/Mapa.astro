@@ -1,0 +1,133 @@
+<div>
+    <div class="fondoMapa">
+        <img id="YLhero" src="/raqueabarca.github.io/mapa.jpeg" alt="Imagen 1">
+        <div class="location-pin">
+            <a id="pinAlajuela" href="/raqueabarca.github.io/actividades">
+                <i class="fa-solid fa-location-pin fa-3x" style="color: var(--amarillo);"></i>
+                <div class="info">
+                    <h2>Alajuela</h2>
+                    <p>Información adicional sobre Alajuela.</p>
+                </div>
+            </a>
+        </div> 
+        <div class="location-pin">
+            <a id="pinDesampa" href="/raqueabarca.github.io/actividades">
+                <i class="fa-solid fa-location-pin fa-3x" style="color: var(--turqueza)"></i>
+                <div class="info">
+                    <h2>Alajuela</h2>
+                    <p>Información adicional sobre Alajuela.</p>
+                </div>
+            </a>
+         </div>
+        <div class="location-pin">
+            <a id="pinCanoas" href="/raqueabarca.github.io/actividades">
+                <i class="fa-solid fa-location-pin fa-3x" style="color: var(--verdeYL)"></i>
+                <div class="info">
+                    <h2>Alajuela</h2>
+                    <p>Información adicional sobre Alajuela.</p>
+                </div>
+            </a>
+          </div>
+        <div class="location-pin">
+            <a id="pinCarrizal" href="/raqueabarca.github.io/actividades">
+                <i class="fa-solid fa-location-pin fa-3x" style="color: var(--amarillo)"></i>
+                <div class="info">
+                    <h2>Alajuela</h2>
+                    <p>Información adicional sobre Alajuela.</p>
+                </div>
+            </a>
+        </div>
+        <div class="location-pin">
+            <a id="pinCarmen" href="/raqueabarca.github.io/actividades">
+                <i class="fa-solid fa-location-pin fa-3x" style="color: var(--turqueza)"></i>
+                <div class="info">
+                    <h2>Alajuela</h2>
+                    <p>Información adicional sobre Alajuela.</p>
+                </div>
+            </a>
+        </div>
+        <div class="location-pin">
+            <a id="pinBarrio" href="/raqueabarca.github.io/actividades">
+                <i class="fa-solid fa-location-pin fa-3x" style="color: var(--verdeYL)"></i>
+                <div class="info">
+                    <h2>Alajuela</h2>
+                    <p>Información adicional sobre Alajuela.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    
+    
+</div>
+
+<style>
+    .fondoMapa{
+        position:relative;
+    }
+
+    .location-pin {
+    position: absolute;
+    transition: transform 0.4s;
+    }
+
+    .location-pin .fa-location-pin {
+        font-size: 3x;
+        transition: transform 0.4s; /* Agrega una transición suave */
+    }
+
+    /* Estilo para los iconos cuando se hace hover */
+    .location-pin:hover .fa-location-pin {
+        transform: scale(1.7); /* Hace el icono 20% más grande al hacer hover */
+    }
+
+    .location-pin .info {
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5%;
+        padding: 10px;
+        display: none;
+        transform: scale(0); /* Inicialmente oculto y en escala 0 */
+        transition: transform 0.5s, display 0.5s;
+        top: 20%; /* Alinea verticalmente en el centro */
+        left: 100%; /* Posición a la derecha del icono */
+        transform-origin: left top; /* Establece el origen de la transformación */
+    }
+
+    .location-pin:hover .info {
+        display: block;
+        transform: scale(1);
+    }
+    
+    #pinAlajuela{
+        position:absolute;
+        left:690px;
+        bottom:100px;
+    }
+
+    #pinDesampa{
+        position:absolute;
+        left:820px;
+        bottom:110px;
+    }
+    #pinCanoas{
+        position:absolute;
+        left:740px;
+        bottom:160px;
+    }
+    #pinCarrizal{
+        position:absolute;
+        left:960px;
+        bottom:430px;
+    }
+    #pinCarmen{
+        position:absolute;
+        left:655px;
+        bottom:30px;
+    }
+    #pinBarrio{
+        position:absolute;
+        left:527px;
+        bottom:57px;
+    }
+    </style>
