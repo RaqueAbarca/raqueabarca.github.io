@@ -60,6 +60,7 @@ h2 {
 }
 h3 {
 	font-size: 1.953em;
+	text-align: center;
 }
 h4 {
 	font-size: 1.563em;
@@ -93,6 +94,15 @@ input {
 table {
 	width: 100%;
 }
+.titulopagina{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.titulopagina h1{
+	margin-bottom: -20px;
+}
+
 img {
 	max-width: 100%;
 	height: auto;

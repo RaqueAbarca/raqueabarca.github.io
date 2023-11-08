@@ -1,0 +1,71 @@
+<div class="imagenesEquipo">
+    <div class="imgProfile" style="background-image: url(https://media.licdn.com/dms/image/C4E03AQHD7SlDbjq5pA/profile-displayphoto-shrink_800_800/0/1628033211522?e=1704931200&v=beta&t=TGsB1o-wHIeu6ZLBZK13NGz33YaJavjimVHIuxtTImQ);">
+        <h3>Priscilla Solórzano</h3>
+        <p>Directora de Metro Alajuela</p>
+    </div>
+    <div class="imgProfile" style="background-image: url(/raqueabarca.github.io/nicoCastro.png)">
+        <h3>Nicole Castro</h3>
+        <p>Directora del Área Este</p>
+    </div>
+    <div class="imgProfile" style="background-image: url(https://lh3.googleusercontent.com/a/ACg8ocKVC8sALEXNdMQJSMehvt6mqg380VdqXFyMozcakRhfZYc=s576-c-no);">
+        <h3>Sara Trejos</h3>
+        <p>Directora del Área Oeste</p>
+    </div>
+</div>
+<div class="imagenesEquipo">
+    <div class="imgProfile" style="background-image: url(https://media.licdn.com/dms/image/C4E03AQHD7SlDbjq5pA/profile-displayphoto-shrink_800_800/0/1628033211522?e=1704931200&v=beta&t=TGsB1o-wHIeu6ZLBZK13NGz33YaJavjimVHIuxtTImQ);">
+        <h3>Priscilla Solórzano</h3>
+        <p>Directora de Metro Alajuela</p>
+    </div>
+    <div class="imgProfile" style="background-image: url(https://lh3.googleusercontent.com/a/ACg8ocKVC8sALEXNdMQJSMehvt6mqg380VdqXFyMozcakRhfZYc=s576-c-no);">
+        <h3>Raquel Abarca</h3>
+        <p>Coordinadora de Desamparados</p>
+    </div>
+    <div class="imgProfile" style="background-image: url(/raqueabarca.github.io/Majo.png)">
+        <h3>Maria José Ugalde</h3>
+        <p>Coordinadora de Alajuela</p>
+    </div>
+</div>
+
+<style>
+    .imagenesEquipo{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .imgProfile{
+        background-image:;
+        background-position: center; 
+        background-size: cover;
+        border-radius: 5%; 
+        width: 370px;
+        height: 370px;
+        margin: 30px 5px 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1; 
+        color: white;
+    }
+
+    .imgProfile::after{
+        content: "";
+        position: absolute;
+        border-radius: 5%;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#00879300, #00bf7300, #00bf7300, #000000ea);
+        z-index: -1;
+    }
+
+    .imgProfile h3{
+        margin: -20px;
+    }
+
+    .imgProfile p{
+        text-align: center;
+    }
+</style>
