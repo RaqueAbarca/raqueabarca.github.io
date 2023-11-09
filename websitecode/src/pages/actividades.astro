@@ -17,6 +17,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<main>
 			<div class="titulopagina">
 				<h1>Actividades</h1>
+			</div>
 				<div class="previewClubs">
 					<div class="cajaPC">
 						<div class="textoPC">
@@ -24,17 +25,25 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 							<p>Contamos con reuniones semanales en diferentes partes de Alajuela, estas reuniones les damos el nombre de Club. En un club los jovenes pueden disfrutar, distraerse, socializar y escuchar de Jesus.</p>
 							<p>Tenemos club para toda la poblacion de jovenes, pues contamos con nuestros clubes de Capernaum, los cuales estan enfocados a chicos con alguna discapacidad. Ademas de esto, tenemos Vidas Jovenes para madres jovenes y Universidad, para mayores de 18 años.</p>
 							<p>Si deseas conocer más, sobre nuestras reuniones, porfavor has click en el siguiente boton:</p>
-							<a href="/raqueabarca.github.io/actividades" class="boton">Conocer mas</a>
+							<a href="/raqueabarca.github.io/clubs" class="boton1">Conocer mas</a>
 						</div>
 						<div class="imgPC"><img src="/raqueabarca.github.io/desampaAlto.jpeg" alt="Imagen 1"></div>
 						
 					</div>
 				</div>
-				<h2>Campamentos</h2>
-				<div id="videoCampa">
-					<iframe width="960" height="515" src="https://www.youtube.com/embed/Y2AWtfn5wlg?si=SnyKj5ijmFEjrF-F&amp;controls=1&amp;start=1;autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			</div>
+				
+				<div class="x">
+				<div class="imgBannerCampa" style="background-image: url(/raqueabarca.github.io/auditorioCampo.jpeg);">
+					<h1>Campamentos</h1>
+					<h3>Los mejores 4 días de tu vida!</h3>
+					<p>Si tenes entre 14 y 23 años, acompañanos y viví una experiencia única.</p>
+					<a href="/raqueabarca.github.io/campa" class="boton2">Más información</a>
 				</div>
-				<div class="imgProfile" style="background-image: url(https://lh3.googleusercontent.com/a/ACg8ocKVC8sALEXNdMQJSMehvt6mqg380VdqXFyMozcakRhfZYc=s576-c-no);">
+				</div>
+				
+				<div id="videoCampa">
+					<iframe width="1060" height="615" src="https://www.youtube.com/embed/Y2AWtfn5wlg?si=SnyKj5ijmFEjrF-F&amp;controls=1&amp;start=1;autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			
+				</div>
 
 		</main>
 		<Footer />
@@ -42,9 +51,38 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 </html>
 
 <style>
+	.x{
+		display: flex;
+		justify-content: center;
+	}
 	#videoCampa{
 		display: flex;
 		justify-content: center;
+	}
+
+	.imgBannerCampa{
+		background-position: center; 
+		background-size: cover;
+		width: 100%;
+		height: 30em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 1; 
+		color: white;
+		align-items: center;
+	}
+	.imgBannerCampa::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(rgba(0, 0, 0, 0.237), #000000);
+		z-index: -1;
 	}
 
 	.cajaPC{
@@ -66,7 +104,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		text-align: left !important;
 	}
 
-	.boton {
+	.boton1 {
         display: inline-block;
         padding: 15px 30px;
         color: #fff;
@@ -75,5 +113,16 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         font-weight: bold;
         font-size: 18px;
         background-color: rgb(0, 0, 0);
+    }
+
+	.boton2 {
+        display: inline-block;
+        padding: 15px 30px;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        background-color: rgb(255, 255, 255);
     }
 </style>
