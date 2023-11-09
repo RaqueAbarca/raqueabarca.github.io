@@ -6,13 +6,21 @@ import HeaderLink from './HeaderLink.astro';
 	<nav>
 		<div class="logo"><a href="/raqueabarca.github.io/"><img src="/raqueabarca.github.io/LogoYL.png" alt="Logo de la organización"></a></div>
 		<div class="internal-links">
-			<HeaderLink href="/raqueabarca.github.io/">Inicio</HeaderLink>
-			<HeaderLink href="/raqueabarca.github.io/about">Sobre nosotros</HeaderLink>
-			<HeaderLink href="/raqueabarca.github.io/actividades">Actividades</HeaderLink>
-			<HeaderLink href="/raqueabarca.github.io/ubicacion">Ubicación</HeaderLink>
-			<HeaderLink href="/raqueabarca.github.io/contacto">Contacto</HeaderLink>
-			<HeaderLink href="/raqueabarca.github.io/donaciones">Donaciones</HeaderLink>
-			<HeaderLink href="/raqueabarca.github.io/testimonios">Testimonios</HeaderLink>
+			<ul>
+				<li><HeaderLink href="/raqueabarca.github.io/">Inicio</HeaderLink></li>
+				<li><HeaderLink href="/raqueabarca.github.io/about">Sobre nosotros</HeaderLink></li>
+				<li><HeaderLink href="/raqueabarca.github.io/actividades">Actividades</HeaderLink>
+					<ul>
+					<li><HeaderLink class="submenuLinks" href="/raqueabarca.github.io/actividades">Clubs</HeaderLink></li>
+					<li><HeaderLink class="submenuLinks"href="/raqueabarca.github.io/actividades">Campamentos</HeaderLink></li>
+					<li><HeaderLink class="submenuLinks"href="/raqueabarca.github.io/actividades">Otros</HeaderLink></li>
+					</ul>
+				</li>
+				<li><HeaderLink href="/raqueabarca.github.io/ubicacion">Ubicación</HeaderLink></li>
+				<li><HeaderLink href="/raqueabarca.github.io/contacto">Contacto</HeaderLink></li>
+				<li><HeaderLink href="/raqueabarca.github.io/donaciones">Donaciones</HeaderLink></li>
+				<li><HeaderLink href="/raqueabarca.github.io/testimonios">Testimonios</HeaderLink></li>
+			</ul>
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -72,13 +80,52 @@ import HeaderLink from './HeaderLink.astro';
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
+
+	nav a:hover{
+		color: var(--verdeYL);
+	}
+
 	nav a.active {
 		text-decoration: none;
 		border-bottom-color: var(--amarillo);
 	}
+
+	nav ul ul {
+    display: none;
+	background-color: rgb(238, 238, 238);
+    position: absolute;
+    top: 50%;
+    left: 0;
+	}
+
+	nav li:hover > ul {
+		display: inherit;
+	}
 	.social-links,
 	.social-links a {
 		display: flex;
+	}
+	nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+	}
+
+	nav li {
+		display: inline-block;
+		position: relative;
+	}
+
+	nav ul ul {
+    display: none;
+    position: absolute;
+    top: 90%;
+    left: 0;
+	padding: 0%;
+	}
+
+	.submenuLinks{
+	padding: 0.5em !important;
 	}
 
 	.logo{
