@@ -175,8 +175,22 @@ hr {
 		font-size: 18px;
 	}
 	main {
-		padding: 1em;
+		
 	}
+
+	h1{
+		font-size: 65px;
+	}
+
+	.internal-links{
+		display: none;
+	}
+
+	.flex-containerTesti{
+		flex-direction: column;
+	}
+
+
 }
 
 .sr-only {
