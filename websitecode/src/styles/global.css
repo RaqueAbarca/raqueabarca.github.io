@@ -137,11 +137,8 @@ img {
 	z-index: -1;
 }
 
-.imgProfile h3{
-	margin: -20px;
-}
-
 .imgProfile p{
+	margin: 0px;
 	text-align: center;
 }
 
