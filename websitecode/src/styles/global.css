@@ -73,10 +73,11 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: var(--verdeYL);
+	text-decoration: none;
 }
 a:hover {
-	color: var(--accent);
+	color: var(--turqueza);
 }
 p {
 	margin-bottom: 1em;
@@ -170,6 +171,23 @@ hr {
 
 .internal-links{
 	display: block;
+}
+
+.btnContactar{
+	padding: 15px 30px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 5px;
+	font-size: 30px;
+    width: 300px;
+    background-color: var(--amarillo);
+    text-align: center;
+	box-shadow: 0 2px 8px rgba(var(--black), 55%);
+}
+
+.btnContactar:hover{
+    color: #000000;
+    background-color: rgb(255, 208, 108)
 }
 
 @media (max-width: 720px) {
