@@ -21,9 +21,10 @@
     </div>
 
     <script>
-        const carousel = document.querySelector('.carousel');
-        const slides = document.querySelectorAll('.carousel-slide');
-        var tamPantalla = screen.width*0.891;
+    document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.querySelector('.carousel-container .carousel');
+        const slides = document.querySelectorAll('.carousel-container .carousel-slide');
+        var tamPantalla = screen.width * 0.891;
         let currentIndex = 0;
 
         function nextSlide() {
@@ -32,13 +33,17 @@
         }
 
         function updateCarousel() {
-            const offset = -currentIndex * tamPantalla; // Ancho de la imagen
-            carousel.style.transform = `translateX(${offset}px)`;
+            if (carousel instanceof HTMLElement) {
+                const offset = -currentIndex * tamPantalla; // Ancho de la imagen
+                carousel.style.transform = `translateX(${offset}px)`;
+            }
         }
 
         setInterval(nextSlide, 3500); // Cambia la imagen cada 3 segundos
-        
+
         updateCarousel();
+    });
+
     </script>
 </body>
 
