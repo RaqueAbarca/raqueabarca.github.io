@@ -7,5 +7,5 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
 	site: 'https://raqueabarca.github.io',
 	integrations: [mdx(), sitemap()],
-	base: '/raqueabarca.github.io'
+	base: '/'
 });
